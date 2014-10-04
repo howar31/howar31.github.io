@@ -85,6 +85,7 @@ a {
 /* 1 */
 #frontpage {
 	z-index: 5;
+	box-shadow: 0px 0px 50px 0px black;
 }
 #frontpage .parallax_layer-base {
 	font-size: 3rem;
@@ -119,6 +120,7 @@ a {
 /* 3 */
 #education {
 	z-index: 4;
+	box-shadow: 0px 0px 50px 0px black;
 }
 #education .parallax_layer-base {
 	font-size: 5rem;
@@ -173,6 +175,7 @@ a {
 /* 5 */
 #myworks {
 	z-index: 3;
+	box-shadow: 0px 0px 50px 0px black;
 }
 #myworks a {
 	color: black;
@@ -238,6 +241,7 @@ a {
 /* 7 */
 #endpage {
 	z-index: 3;
+	box-shadow: 0px 0px 50px 0px black;
 }
 #endpage .parallax_layer-base {
 	font-size: 3rem;
