@@ -15,9 +15,7 @@ body {
 }
 
 /* centre the content in the parallax layers */
-.singleline {
-	font-size: 3rem;
-	line-height: 3.5rem;
+.parallax_content {
 	text-align: center;
 	width: 90%;
 	position: absolute;
@@ -60,19 +58,21 @@ body {
 	transform: translateZ(90px) scale(.7);
 	z-index: 1;
 }
-
 .parallax_layer-base {
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
+	z-index: 5;
+}
+.parallax_layer-inter {
+	-webkit-transform: translateZ(-180px) scale(1.6);
+	transform: translateZ(-180px) scale(1.6);
 	z-index: 4;
 }
-
 .parallax_layer-back {
 	-webkit-transform: translateZ(-300px) scale(2);
 	transform: translateZ(-300px) scale(2);
 	z-index: 3;
 }
-
 .parallax_layer-deep {
 	-webkit-transform: translateZ(-600px) scale(3);
 	transform: translateZ(-600px) scale(3);
@@ -80,79 +80,121 @@ body {
 }
 
 /* groups */
+/* 1 */
 #frontpage {
 	z-index: 5;
 }
 #frontpage .parallax_layer-base {
-	background: url(./img/pencil.jpg);
+	font-size: 3rem;
+	line-height: 4rem;
+	background: url(./img/hack.jpg);
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
 
-#group2 {
+/* 2 */
+#bio {
 	z-index: 3;
 }
-#group2 .parallax_layer-base {
+#bio .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
-#group2 .parallax_layer-back {
+#bio .parallax_layer-inter {
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 0px 10px black;
+	opacity: 0.2;
+}
+#bio .parallax_layer-back {
 	background: url(./img/appledesktop.jpg);
 }
 
-#group3 {
+/* 3 */
+#education {
 	z-index: 4;
 }
-#group3 .parallax_layer-fore {
+#education .parallax_layer-fore {
+}
+#education .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
+	background: url(./img/pencil.jpg); 
 	color: black;
 	text-shadow: 0px 0px 10px white;
 }
-#group3 .parallax_layer-base {
+
+/* 4 */
+#skills {
+	z-index: 2;
+}
+#skills .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
+	color: white;
+	text-shadow: 0px 0px 10px black;
+}
+#skills .parallax_layer-inter {
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 0px 10px black;
+	opacity: 0.2;
+}
+#skills .parallax_layer-back {
+	background: url(./img/lake.jpg); 
+}
+#skills .parallax_layer-deep {
+}
+
+/* 5 */
+#myworks {
+	z-index: 3;
+}
+#myworks .parallax_layer-fore {
+}
+#myworks .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
 	background: url(./img/kbwhite.jpg); 
 	color: black;
 	text-shadow: 0px 0px 10px white;
 }
 
-#group4 {
+/* 6 */
+#contacts {
 	z-index: 2;
 }
-#group4 .parallax_layer-base, 
-#group4 .parallax_layer-back {
+#contacts .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
-#group4 .parallax_layer-deep {
-	background: url(./img/meshes.jpg); 
-}
-
-#group5 {
-	z-index: 3;
-}
-#group5 .parallax_layer-fore {
+#contacts .parallax_layer-inter {
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
 	color: white;
 	text-shadow: 0px 0px 10px black;
+	opacity: 0.2;
 }
-#group5 .parallax_layer-base {
-	background: url(./img/lake.jpg); 
-	color: white;
-	text-shadow: 0px 0px 10px black;
-}
-
-#group6 {
-	z-index: 2;
-}
-#group6 .parallax_layer-base {
-	color: white;
-	text-shadow: 0px 0px 10px black;
-}
-#group6 .parallax_layer-back {
+#contacts .parallax_layer-back {
 	background: url(./img/planet.jpg);
 }
 
+/* 7 */
 #endpage {
 	z-index: 3;
 }
 #endpage .parallax_layer-base {
+	font-size: 3rem;
+	line-height: 4rem;
 	background: url(./img/bluemoon.jpg); 
 	color: white;
 	text-shadow: 0px 0px 10px black;
