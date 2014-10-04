@@ -119,6 +119,15 @@ body {
 	z-index: 4;
 }
 #education .parallax_layer-fore {
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 0px 10px black;
+	opacity: 0.2;
+}
+#education .parallax_layer-fore .parallax_content {
+	text-align: right;
 }
 #education .parallax_layer-base {
 	font-size: 3rem;
@@ -157,6 +166,15 @@ body {
 	z-index: 3;
 }
 #myworks .parallax_layer-fore {
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 0px 10px black;
+	opacity: 0.2;
+}
+#myworks .parallax_layer-fore .parallax_content {
+	text-align: right;
 }
 #myworks .parallax_layer-base {
 	font-size: 3rem;
