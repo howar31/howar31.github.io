@@ -1,5 +1,6 @@
 body, html {
 	overflow: hidden;
+	font-size: 80%;
 }
 
 body {
@@ -13,9 +14,6 @@ body {
 
 a {
 	text-decoration: none;
-}
-
-.parallax {
 }
 
 /* centre the content in the parallax layers */
