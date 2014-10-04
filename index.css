@@ -16,6 +16,13 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: "\00BB \0020";
+}
+
 /* centre the content in the parallax layers */
 .parallax_content {
 	text-align: center;
@@ -167,7 +174,7 @@ a {
 	opacity: 0.2;
 }
 #skills .parallax_layer-back {
-	background: url(./img/lake.jpg); 
+	background: url(./img/fiber.jpg); 
 }
 #skills .parallax_layer-deep {
 }
@@ -235,7 +242,7 @@ a {
 	opacity: 0.2;
 }
 #contacts .parallax_layer-back {
-	background: url(./img/planet.jpg);
+	background: url(./img/radar.jpg);
 }
 
 /* 7 */
