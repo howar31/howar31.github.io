@@ -3,8 +3,7 @@ body, html {
 }
 
 body {
-	font: 100% Arial;
-	line-height: 1.5;
+	font-family: Arial;
 }
 
 * {
@@ -13,12 +12,14 @@ body {
 }
 
 .parallax {
-	font-size: 200%;
 }
 
 /* centre the content in the parallax layers */
-.title {
+.singleline {
+	font-size: 3rem;
+	line-height: 3.5rem;
 	text-align: center;
+	width: 90%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -79,7 +80,6 @@ body {
 }
 
 /* groups */
-
 #frontpage {
 	z-index: 5;
 }
@@ -93,8 +93,8 @@ body {
 	z-index: 3;
 }
 #group2 .parallax_layer-base {
-	color: black;
-	text-shadow: 0px 0px 10px white;
+	color: white;
+	text-shadow: 0px 0px 10px black;
 }
 #group2 .parallax_layer-back {
 	background: url(./img/appledesktop.jpg);
@@ -159,14 +159,62 @@ body {
 }
 
 /* footer */
-
 .footer {
 	position: absolute;
-
 	z-index:100;
 	bottom: 0vh;
 	top: auto;
-	font-size:80%;
+	padding: 5px 0px 5px 0px;
 	text-align:center;
 	width: 100%;
+	font-size:0.8rem;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	opacity: 0.4;
+	transition: opacity 0.5s, background 1s;
+}
+.footer:hover {
+	opacity: 0.8;
+	background: rgba(0,0,0,0.5);
+}
+.footer a {
+	color: white;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/* blink text */
+.blink {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
 }
