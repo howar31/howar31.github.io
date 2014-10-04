@@ -11,6 +11,10 @@ body {
 	padding:0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .parallax {
 }
 
@@ -172,6 +176,9 @@ body {
 #myworks {
 	z-index: 3;
 }
+#myworks a {
+	color: black;
+}
 #myworks .parallax_layer-fore {
 	font-size: 5rem;
 	line-height: 4rem;
@@ -201,6 +208,9 @@ body {
 /* 6 */
 #contacts {
 	z-index: 2;
+}
+#contacts a {
+	color: white;
 }
 #contacts .parallax_layer-base {
 	font-size: 2rem;
@@ -261,7 +271,6 @@ body {
 .footer a {
 	color: white;
 	font-style: italic;
-	text-decoration: none;
 }
 
 /* blink text */
