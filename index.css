@@ -273,6 +273,11 @@ a {
 	font-style: italic;
 }
 
+/* Stupid FB button fix */
+.fb_iframe_widget {
+	line-height: 24px;
+}
+
 /* blink text */
 .blink {
 	-webkit-animation-name: blinker;
