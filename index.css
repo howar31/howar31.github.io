@@ -122,28 +122,28 @@ a {
 #education {
 	z-index: 4;
 }
-#education .parallax_layer-fore {
+#education .parallax_layer-base {
 	font-size: 5rem;
 	line-height: 4rem;
 	font-weight: bold;
+	background: url(./img/pencil.jpg); 
 	color: white;
 	text-shadow: 0px 0px 10px black;
+}
+#education .parallax_layer-base .parallax_content {
+	text-align: right;
 	opacity: 0.2;
 }
-#education .parallax_layer-fore .parallax_content {
-	text-align: right;
-}
-#education .parallax_layer-base {
+#education .parallax_layer-fore {
 	font-size: 2rem;
 	line-height: 3rem;
-	background: url(./img/pencil.jpg); 
 	color: black;
 	text-shadow: 0px 0px 10px white;
 }
-#education .parallax_layer-base .parallax_content {
+#education .parallax_layer-fore .parallax_content {
 	text-align: left;
 }
-#education .parallax_layer-base .parallax_content ul {
+#education .parallax_layer-fore .parallax_content ul {
 	padding-left: 20px;
 	padding-bottom: 10px;
 }
@@ -179,28 +179,28 @@ a {
 #myworks a {
 	color: black;
 }
-#myworks .parallax_layer-fore {
+#myworks .parallax_layer-base {
 	font-size: 5rem;
 	line-height: 4rem;
 	font-weight: bold;
+	background: url(./img/kbwhite.jpg); 
 	color: white;
 	text-shadow: 0px 0px 10px black;
+}
+#myworks .parallax_layer-base .parallax_content {
+	text-align: right;
 	opacity: 0.2;
 }
-#myworks .parallax_layer-fore .parallax_content {
-	text-align: right;
-}
-#myworks .parallax_layer-base {
+#myworks .parallax_layer-fore {
 	font-size: 2rem;
 	line-height: 3rem;
-	background: url(./img/kbwhite.jpg); 
 	color: black;
 	text-shadow: 0px 0px 10px white;
 }
-#myworks .parallax_layer-base .parallax_content {
+#myworks .parallax_layer-fore .parallax_content {
 	text-align: left;
 }
-#myworks .parallax_layer-base .parallax_content ul {
+#myworks .parallax_layer-fore .parallax_content ul {
 	padding-left: 20px;
 	padding-bottom: 10px;
 }
