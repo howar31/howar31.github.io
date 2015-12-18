@@ -62,7 +62,7 @@ ul li:before {
 .parallax_layer {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -6px;
 	right: 0;
 	bottom: 0;
 	background-repeat: no-repeat !important;
@@ -104,7 +104,8 @@ ul li:before {
 #frontpage .parallax_layer-base {
 	font-size: 3rem;
 	line-height: 4rem;
-	background: url(./img/acefire.jpg);
+//	background: url(./img/acefire.jpg);
+	background-color: black;
 	color: white;
 	text-shadow: 0px 0px 10px black;
 }
