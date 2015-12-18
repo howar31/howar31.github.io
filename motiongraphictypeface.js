@@ -366,7 +366,7 @@ vertex3d.prototype = {
 		}
 	};
 	/* class */
-	var sphereNum = 20;
+	var sphereNum = 10;
 	var s = new Array();
 	/*-----------------------------------------------------*/
 	var setup = function() {
@@ -553,6 +553,6 @@ vertex3d.prototype = {
 document.body.onmousemove = function(e) {
 	camera.rotate.x = (e.pageY/window.innerHeight * 180 - 90) * 0.1;
 	camera.rotate.y = (e.pageX/window.innerWidth * 180 - 90) * 0.05;
-	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
-	document.onmouseup = function() {camera.zoom = 1};
+//	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
+//	document.onmouseup = function() {camera.zoom = 1};
 };
