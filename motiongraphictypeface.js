@@ -366,7 +366,7 @@ vertex3d.prototype = {
 		}
 	};
 	/* class */
-	var sphereNum = 10;
+	var sphereNum = 8;
 	var s = new Array();
 	/*-----------------------------------------------------*/
 	var setup = function() {
@@ -504,7 +504,7 @@ vertex3d.prototype = {
 		{text:"PERSONAL", sphereRadius:140, sphereSpace:90, unitTime:100, time:5000},
 		{text:"WEBSITE", sphereRadius:140, sphereSpace:90, unitTime:100, time:4000},
 		{text:"HOWAR31_WEB", sphereRadius:110, sphereSpace:70, unitTime:200, time:4000},
-		{text:"@@@@@@@@@@", sphereRadius:60 + Math.random()*60, sphereSpace:200, unitTime:100, time:10000}
+		{text:"@@@@@@@@", sphereRadius:60 + Math.random()*60, sphereSpace:200, unitTime:100, time:10000}
 	];
 	
 	var textSetChangerIncrement = 0;
