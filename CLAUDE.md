@@ -10,9 +10,3 @@ the root page.
 (client-side — `location.replace` plus a `<meta refresh>` no-JS fallback). It
 is not a landing page and reveals nothing about the items hosted under the
 domain.
-
-## Twin copy
-
-`index.html` is byte-identical to `index.html` in the `howar31/share` repo
-(served at `lab.howar31.com/share/`). Both are the same redirect stub; keep
-them byte-identical.
